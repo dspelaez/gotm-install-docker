@@ -1,4 +1,6 @@
 FROM ubuntu:24.04
+MAINTAINER Daniel Pelaez-Zapata
+
 ENV DEBIAN_FRONTEND=noninteractive
 
 # Install build essentials
