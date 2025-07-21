@@ -1,4 +1,4 @@
-#  Install GOTM (General Ocean Turbulence Model) in a Docker container
+#  Install GOTM (General Ocean Turbulence Model) using Docker
 
 To build the image:
 
