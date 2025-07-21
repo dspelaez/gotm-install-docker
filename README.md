@@ -24,6 +24,8 @@ Alternativiely, we can define an alias:
 alias gotm='docker run --rm -v "$(pwd)":/case gotm-image /usr/bin/gotm'
 ```
 
+or define a function:
+
 ```
 gotm() {
     docker run --rm -v "$(pwd)":/case gotm-image /usr/bin/gotm "$@"
