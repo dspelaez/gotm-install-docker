@@ -18,11 +18,15 @@ To run interactivelly:
 docker run --rm -it -v "$(pwd)":/case --entrypoint /bin/bash gotm-image
 ```
 
-Alternativiely, we can define a function:
+Alternativiely, we can define an alias:
+
+```
+alias gotm='docker run --rm -v "$(pwd)":/case gotm-image /usr/bin/gotm'
+```
 
 ```
 gotm() {
-    docker run --rm -v "$(pwd)":/case gotm-image gotm /case/"$@"
+    docker run --rm -v "$(pwd)":/case gotm-image /usr/bin/gotm /case/"$@"
 }
 ```
 
