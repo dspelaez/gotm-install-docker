@@ -1,6 +1,4 @@
 FROM ubuntu:24.04
-MAINTAINER Daniel Pelaez-Zapata
-
 ENV DEBIAN_FRONTEND=noninteractive
 
 # Install build essentials
@@ -80,4 +78,4 @@ RUN mkdir /opt/gotm/ && cd /opt/gotm/ && \
 # add binary to /usr/local/bin
 RUN ln -s /opt/gotm/build/bin/gotm /usr/bin/gotm
 WORKDIR /case
-CMD ["./gotm", "-v"]
+CMD ["/usr/bin/gotm"]
